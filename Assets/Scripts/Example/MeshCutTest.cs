@@ -9,6 +9,10 @@ namespace Example
 		[SerializeField] private MeshFilter filter;
 		[SerializeField] private MeshRenderer meshRenderer;
 
+		[SerializeField] private int sectionAmount = 3;
+		[SerializeField] private float desireEdgeLenght = 0.3f;
+		[SerializeField] private float rndOffset = 0.1f;
+
 		private MeshCutter cutter;
 
 		void Start()
@@ -28,7 +32,7 @@ namespace Example
 					{
 						Vector3 hitPoint = hit.point;
 
-						List<Mesh> meshes = cutter.GetMeshes(hitPoint, transform, 0.3f, 3, 0.1f);
+						List<Mesh> meshes = cutter.GetMeshes(hitPoint, transform, desireEdgeLenght, sectionAmount, rndOffset);
 
 						meshRenderer.gameObject.SetActive(false);
 

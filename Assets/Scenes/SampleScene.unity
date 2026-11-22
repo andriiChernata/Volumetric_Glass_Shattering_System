@@ -1750,6 +1750,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeshCutTest
   filter: {fileID: 534052308}
   meshRenderer: {fileID: 534052307}
+  sectionAmount: 3
+  desireEdgeLenght: 0.3
+  rndOffset: 0.1
 --- !u!23 &534052307
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2801,6 +2804,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeshCutTest
   filter: {fileID: 875381272}
   meshRenderer: {fileID: 875381271}
+  sectionAmount: 2
+  desireEdgeLenght: 0.2
+  rndOffset: 0.05
 --- !u!23 &875381271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3285,6 +3291,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MeshCutTest
   filter: {fileID: 952727964}
   meshRenderer: {fileID: 952727963}
+  sectionAmount: 1
+  desireEdgeLenght: 0.5
+  rndOffset: 0.2
 --- !u!23 &952727963
 MeshRenderer:
   m_ObjectHideFlags: 0
